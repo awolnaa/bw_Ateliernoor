@@ -1,0 +1,85 @@
+{
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1120px",
+      "wideSize": "1360px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "olive",
+          "name": "Olijf",
+          "color": "#515c46"
+        },
+        {
+          "slug": "cream",
+          "name": "Linnen",
+          "color": "#f5f2ec"
+        },
+        {
+          "slug": "ink",
+          "name": "Inkt",
+          "color": "#30352e"
+        },
+        {
+          "slug": "clay",
+          "name": "Terracotta",
+          "color": "#a75e44"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "body",
+          "name": "Hind",
+          "fontFamily": "Hind, sans-serif"
+        },
+        {
+          "slug": "heading",
+          "name": "Zilla Slab",
+          "fontFamily": "\"Zilla Slab\", Georgia, serif"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "#30352e",
+      "background": "#fffefa"
+    },
+    "spacing": {
+      "blockGap": "0"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "17px",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontWeight": "400",
+          "lineHeight": "1.12"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "inherit"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "#515c46",
+          "text": "#ffffff"
+        },
+        "border": {
+          "radius": "0"
+        }
+      }
+    }
+  }
+}

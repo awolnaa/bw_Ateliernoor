@@ -1,0 +1,11 @@
+.bw-brand-credit{display:flex;justify-content:flex-end;align-items:center;clear:both;padding:14px clamp(20px,4vw,64px);margin:0!important;background:#071c31;color:#fff;font-family:Arial,sans-serif;isolation:isolate}
+.bw-brand-credit-link{display:inline-flex!important;align-items:center!important;justify-content:center;gap:9px!important;text-decoration:none!important;color:inherit!important;line-height:1.3;font-size:10px!important;letter-spacing:.035em;padding:4px 8px!important;cursor:pointer;transition:opacity .2s ease}
+.bw-brand-credit-link:hover{opacity:.78}.bw-brand-credit-link:focus-visible{outline:2px solid currentColor;outline-offset:5px;border-radius:4px}.bw-brand-credit picture{display:flex}.bw-brand-credit .bw-brand-logo{display:block!important;width:86px!important;height:40px!important;object-fit:contain!important;margin:0!important;transform:none!important;filter:none!important;background:transparent!important}
+.bw-brand-credit.is-light{color:#141c24;background:transparent}
+/* One transparent asset, naturally sized on every Monday Makers template. */
+.mm-header-row .mm-logo-image,.mm-footer .mm-logo-image{overflow:visible!important;height:auto!important;background:none!important}
+.mm-logo-image>a{position:static!important;display:block!important}
+.mm-logo-image img.bw-brand-logo{position:static!important;display:block!important;width:100%!important;height:auto!important;max-width:100%!important;left:auto!important;top:auto!important;filter:none!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){.bw-brand-credit-link{transition:none}}
+
+@media(max-width:600px){.bw-brand-credit{justify-content:center;padding:12px 20px}.bw-brand-credit-link{font-size:10px!important}.bw-brand-credit .bw-brand-logo{width:78px!important;height:36px!important}}

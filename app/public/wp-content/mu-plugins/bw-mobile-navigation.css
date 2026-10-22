@@ -1,0 +1,24 @@
+/* Full-width, readable Gutenberg navigation whenever its overlay is open. */
+.wp-block-navigation__responsive-container.is-menu-open{overflow-y:auto!important;overscroll-behavior:contain;padding:72px 24px 36px!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content{align-items:center!important;width:100%;padding-top:0!important;gap:0!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container{width:100%!important;max-width:42rem;margin-inline:auto!important;align-items:center!important;gap:18px!important;text-align:center}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{width:100%!important;max-width:100%;align-items:center!important;justify-content:center!important;white-space:normal!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container>.wp-block-navigation-item{font-size:clamp(20px,5vw,25px)!important;font-weight:700!important;line-height:1.35!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content{display:flex;justify-content:center!important;width:100%;padding:7px 12px!important;text-align:center!important;white-space:normal!important;overflow-wrap:break-word;hyphens:none;text-decoration:none}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__label{max-width:100%;line-height:1.45}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-submenu{flex-direction:column!important;gap:0!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container{position:static!important;inset:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;visibility:visible!important;opacity:1!important;overflow:visible!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;padding:7px 0 2px!important;margin:0!important;border:0!important;background:transparent!important;color:inherit!important;box-shadow:none!important;gap:2px!important;transform:none!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item{font-size:15px!important;font-weight:400!important;line-height:1.5!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content{padding:7px 12px!important;min-height:36px}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-submenu__toggle{display:none!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-close{width:100%!important;max-width:none!important;margin:0!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-dialog{width:100%!important;margin:0!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close{position:fixed!important;top:16px;right:16px;min-width:44px;min-height:44px;display:grid;place-items:center;padding:10px!important;z-index:10}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content:is(:hover,:focus-visible){color:inherit!important;background:color-mix(in srgb,currentColor 8%,transparent);border-radius:4px}
+body.admin-bar .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close{top:60px}
+/* Newer demo designs render their own accessible menu buttons instead of core/navigation. */
+@media(max-width:1000px){
+:is(#photo-nav,#fit-nav,#kids-nav,#driving-nav,#healthcoach-nav,#fincoach-nav,#re-nav,#actor-nav,#lifecoaching-nav).is-open{box-sizing:border-box;width:100%!important;max-width:100%!important;margin-inline:0!important;align-items:center!important;gap:4px!important;text-align:center}
+:is(#photo-nav,#fit-nav,#kids-nav,#driving-nav,#healthcoach-nav,#fincoach-nav,#re-nav,#actor-nav,#lifecoaching-nav).is-open>a{box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:100%;max-width:100%;min-height:44px;padding:12px 14px!important;text-align:center;white-space:normal!important;overflow-wrap:break-word;font-size:20px!important;font-weight:600!important;line-height:1.4;hyphens:none}
+header :is(.menu-toggle,.fit-menu-toggle,.kids-menu-toggle,.driving-menu-toggle,.healthcoach-menu-toggle,.fincoach-menu-toggle,.re-menu-toggle,.actor-menu-toggle,.lifecoaching-menu-toggle){min-height:44px;min-width:44px}
+}

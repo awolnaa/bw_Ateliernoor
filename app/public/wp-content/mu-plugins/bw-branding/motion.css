@@ -1,0 +1,22 @@
+/* Motion remains progressive enhancement: no hidden content before JS is ready. */
+@media(prefers-reduced-motion:no-preference){
+ html.bw-motion-ready [data-bw-enter]{opacity:0;transform:translate3d(0,24px,0);transition:opacity .8s cubic-bezier(.2,.7,.2,1) var(--bw-delay,0ms),transform .8s cubic-bezier(.2,.7,.2,1) var(--bw-delay,0ms)}
+ html.bw-motion-ready [data-bw-enter].bw-entered{opacity:1;transform:translateZ(0)}
+ [class$="-hero-copy"]>*,[class*="-hero-copy "]>*{animation:bw-hero-enter .85s cubic-bezier(.2,.7,.2,1) both}
+ [class$="-hero-copy"]>:nth-child(2){animation-delay:.12s}[class$="-hero-copy"]>:nth-child(3){animation-delay:.24s}[class$="-hero-copy"]>:nth-child(4){animation-delay:.36s}
+ [class$="-card"],[class$="-benefit"]{transition:box-shadow .35s ease,translate .35s ease}
+ [class$="-card"]:hover,[class$="-card"]:focus-within{translate:0 -4px;box-shadow:0 18px 40px rgb(0 0 0 / .09)}
+ [class$="-card"] img{transition:scale .75s cubic-bezier(.2,.7,.2,1)}[class$="-card"]:hover img{scale:1.025}
+ main .wp-block-button__link,main [class$="-button"],main button[type="submit"]{transition:background-color .25s ease,color .25s ease,box-shadow .25s ease,translate .25s ease}
+ main .wp-block-button__link:hover,main [class$="-button"]:hover,main button[type="submit"]:hover{translate:0 -2px;box-shadow:0 7px 18px rgb(0 0 0 / .12)}
+ main [class$="-text-link"]{text-underline-offset:6px;text-decoration-color:transparent;transition:text-decoration-color .25s ease}main [class$="-text-link"]:hover{text-decoration:underline}
+ @keyframes bw-hero-enter{from{opacity:0;transform:translate3d(0,22px,0)}to{opacity:1;transform:none}}
+}
+@media(prefers-reduced-motion:reduce){[data-bw-enter]{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}}
+@media(prefers-reduced-motion:no-preference){
+ html.bw-motion-ready [data-reveal]{transition-duration:.85s;transition-timing-function:cubic-bezier(.2,.7,.2,1)}
+ html.bw-motion-ready figure[data-bw-enter]{clip-path:inset(0 0 8% 0);transition:clip-path 1s cubic-bezier(.2,.7,.2,1),opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}
+ html.bw-motion-ready figure[data-bw-enter].bw-entered{clip-path:inset(0)}
+ main [class$="-button"] span,main .wp-block-button__link span{display:inline-block;transition:transform .25s ease}
+ main [class$="-button"]:hover span,main .wp-block-button__link:hover span{transform:translateX(3px)}
+}
