@@ -3,7 +3,7 @@
 Nederlandstalige woon- en decoratiewinkel, ontworpen en gebouwd door Monday Makers. Visueel geïnspireerd op Learts Decor Thriving, met een eigen Gutenberg-theme en oorspronkelijke teksten, fotografie en typografie. Geen code, logo’s of foto’s uit het commerciële voorbeeld overgenomen.
 
 - Lokaal: http://localhost:10168/
-- Productie-doel: https://ateliernoor.mondaymakers.be/
+- Live demo: https://ateliernoor.mondaymakers.be/
 - Private repository: https://github.com/awolnaa/bw_ateliernoor
 - Referentie: https://learts.thememove.com/decor-thriving/?learts-02
 
@@ -28,3 +28,7 @@ Rustige aardetinten, lokaal geladen Hind en Zilla Slab, eigen typografisch logo,
 `tools/seed.php` initialiseert uitsluitend de nieuwe lokale demo, bewaart oude klooninhoud herstelbaar in de prullenbak en heeft een eenmalige guard. Geen resettool voor een gevulde klantwinkel. Producten zijn echte WooCommerce-objecten. `tests/audit.php` verifieert ACF, varianten, voorraad, verzendregels en testbeveiliging. Browsercontrole van varianten, toevoegen aan winkelmand, verzendkosten en checkout. Contactformulier getest met herkenbare testgegevens, inclusief private opslag, SMTP-aanname en nonce-afwijzing. Ontvangst in de mailbox is niet onafhankelijk bewezen. Mollie-testbetaling blijft afhankelijk van de testsleutel.
 
 Core, vendorplugins, wp-config, databases, logbestanden, klantgegevens en geheimen zijn uitgesloten van Git. Zie BEHEER.md, BETALINGEN.md en ASSETS.md.
+
+## Actuele uitrolstatus
+
+De demo staat live met HTTPS en centrale demo-afscherming en is opgenomen bij Winkels en retail. De testsleutel is gekoppeld en geldig. Het Mollie-profiel retourneert nog geen betaalmethodes; een echte testbetaling en webhook blijven daardoor onbevestigd. Zie DEPLOYMENT.md.
